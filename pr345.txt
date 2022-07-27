@@ -1,0 +1,54 @@
+package in.ineuron.main;
+
+public class Assign1 {
+
+	public static void main(String[] args) {
+		
+	int n=14;   
+	for(int i=0;i<n;i++)
+	{
+		//3rd 
+		  for(int j=0; j<n; j++)
+		  {
+		  	if(j==0||j==n-1||i==0||i==n-1||i+j<=(n-1)/2||j-i>=(n-1)/2)
+			{
+				System.out.print("*");
+			} 
+			else
+			{
+				System.out.print(" ");
+			}
+		  }  
+		  System.out.print("   ");
+		  //4th problem
+		  for(int j=0; j<n; j++)
+		  {
+			if(((j==0||j==n-1)&&i>=(n-1)/2)||(i-j>=(n-1)/2||j+i>=n/2+(n-1)))
+			{
+				System.out.print("*");
+			} 
+			else
+			{
+				System.out.print(" ");
+			}
+		  }  
+		  System.out.print("  ");
+		  //5th pro
+		  for(int j=0; j<n; j++)
+		  {
+		  	if(i==0||i==n-1||i-j>=(n-1)/2||j+i<=(n-1)/2)
+			{
+				System.out.print("*");
+			} 
+			else
+			{
+				System.out.print(" ");
+			}
+		  }  
+		 
+		System.out.println("   ");
+		}
+
+	}
+
+}
